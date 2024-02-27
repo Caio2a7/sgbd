@@ -19,6 +19,8 @@ jobs:
       run: cd bin
     - name: checking dir
       run: ls
+    - name: moving to bin
+      run: cd bin
     - name: running sgbd
       run: ./sgbd.bin
     - name: exiting sgbd
