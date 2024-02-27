@@ -15,12 +15,16 @@ jobs:
     - uses: actions/checkout@v4
     - name: make
       run: make
-    - name: moving to bin
-      run: cd bin
     - name: checking dir
       run: ls
     - name: moving to bin
-      run: cd bin
+      run: cd /bin
+    - name: checking dir
+      run: ls
+    - name: moving to bin
+      run: cd /bin
+    - name: checking dir
+      run: ls
     - name: running sgbd
       run: ./sgbd.bin
     - name: exiting sgbd
