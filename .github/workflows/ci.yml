@@ -18,7 +18,8 @@ jobs:
     - name: checking dir
       run: ls
     - name: moving to bin
-      run: cd sgbd/bin
+      script: 
+      - cd bin
     - name: checking dir
       run: ls
     - name: running sgbd
