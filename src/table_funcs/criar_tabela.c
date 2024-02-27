@@ -176,6 +176,5 @@ int criar_banco_de_dados() {
         free(banco_de_dados->colunas[i].coluna_nome);
     }
     free(banco_de_dados->colunas);
-    free(banco_de_dados->tabela_nome);
     free(banco_de_dados);
 }

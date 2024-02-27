@@ -162,9 +162,6 @@ int listar_dados(){
         }
         formatar_dados(tupla, coluna_tam, qtd_colunas);
         free(tupla);
-        for(int i = 0; i < qtd_colunas; i++){
-            free(tupla[i]);
-        }
     }   
     free(coluna_nomes);
     free(coluna_tam);
