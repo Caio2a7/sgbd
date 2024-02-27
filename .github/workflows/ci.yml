@@ -12,17 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: make
       run: make
     - name: checking dir
       run: ls
     - name: moving to bin
-      run: cd /bin
-    - name: checking dir
-      run: ls
-    - name: moving to bin
-      run: cd /bin
+      run: cd sgbd/bin
     - name: checking dir
       run: ls
     - name: running sgbd
