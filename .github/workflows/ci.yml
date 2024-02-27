@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - "*"
-  pull_requests:
+  pull_request:
     branches:
       - "*"
 
@@ -22,4 +22,3 @@ jobs:
         run: cd bin
       - name: Run binaries
         run: ./sgbd
-        
