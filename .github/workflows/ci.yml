@@ -17,5 +17,5 @@ jobs:
       run: make
     - name: moving to bin
       run: cd bin
-    - name: running .bin
-      run: ./sgbd
+    - name: running sgbd
+      run: ./sgbd.bin
