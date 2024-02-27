@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches:
+      - "*"
+  pull_requests:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubunto-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Configure
+        run: ./configure
+      - name: Build with Make
+        run: make
+      - name: Moving to bin
+        run: cd bin
+      - name: Run binaries
+        run: ./sgbd
+        
